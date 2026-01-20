@@ -22,7 +22,7 @@ app.use('/analyze', analyzeRoute);
 app.use('/generate', generateRoute);
 
 // Catch-all handler for any request that doesn't match the above
-app.get('*', (req, res) => {
+app.get(/(.*)/, (req, res) => {
   res.sendFile(path.join(__dirname, '../client/dist/index.html'));
 });
 
