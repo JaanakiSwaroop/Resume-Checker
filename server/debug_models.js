@@ -1,6 +1,6 @@
 
 const fs = require('fs');
-const API_KEY = process.env.GEMINI_API_KEY || "AIzaSyB2RTzgiiFKiIl5jLX2wEWiuNbMaLEdcUg";
+const API_KEY = process.env.GEMINI_API_KEY;
 const URL = `https://generativelanguage.googleapis.com/v1beta/models?key=${API_KEY}`;
 
 async function run() {
